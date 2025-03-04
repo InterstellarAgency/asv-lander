@@ -1,56 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Sales Vinyl - Coming Soon!</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #0d1117;
-            color: #ffffff;
-            font-family: Helvetica, Arial, sans-serif;
-            text-align: center;
-        }
-        .container {
-            max-width: 600px;
-        }
-        h1 {
-            font-size: wrem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-        .loader {
-            margin: 20px auto;
-            width: 50px;
-            height: 50px;
-            border: 5px solid rgba(255, 255, 255, 0.3);
-            border-top-color: #ffffff;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-        @keyframes spin {
-            from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Sales Vinyl - Coming Soon</title>
+<meta name="description" content="Vinyl records store in Longmont, Colorado.">
+<meta name="keywords" content="vinyl records, records, record store, record store longmont, longmont record store, colorado record store">
+<meta name="author" content="All Sales Vinyl">
+<meta property="og:title" content="All Sales Vinyl - Vinyl Record Store in Longmont, Colorado">
+<meta property="og:description" content="Coming Soon. Vinyl record store in Longmont, Colorado.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body, html {
+        height: 100%;
+        font-family: Helvetica, sans-serif;
+    }
+    .background {
+        background-image: url('YOUR_IMAGE_URL_HERE');
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        height: 100%;
+    }
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: #fff;
+        z-index: 10;
+    }
+    h1 {
+        font-size: 3em;
+        margin-bottom: 0.5em;
+    }
+    p {
+        font-size: 1.2em;
+    }
+</style>
 </head>
 <body>
-    <div class="container">
-		<div class="loader"></div>
-        <h1>New Store Coming Soon</h1>
-        <p>We are working hard on a new site and shopping experience. Stay tuned!</p>
+<div class="background">
+    <div class="overlay"></div>
+    <div class="content">
+        <h1>Coming Soon</h1>
+        <p>We're working hard to bring you something amazing. Stay tuned!</p>
     </div>
+</div>
 </body>
 </html>
